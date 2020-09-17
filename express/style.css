@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+#topdiv {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#topdiv1,
+#topdiv2,
+#bottomdiv1,
+#bottomdiv2,
+#topbuttons,
+#topbuttons,
+#bottombuttons,
+#bottombuttons2 {
+    margin: auto;
+    width: 50%;
+}
+
+.btn-group {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 15px;
+}
+
+#topdiv,
+#bottomdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+p {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#reset {
+    margin-top: 15px;
+}
