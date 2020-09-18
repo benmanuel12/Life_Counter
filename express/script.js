@@ -1,13 +1,16 @@
+// adds 1 to the value of the element with the given ID
 function plus(id) {
     let life = parseInt(document.getElementById(id).innerHTML)
     document.getElementById(id).innerHTML = life + 1;
 }
 
+// subtracts 1 from the value of the element with the given ID
 function minus(id) {
     let life = parseInt(document.getElementById(id).innerHTML)
     document.getElementById(id).innerHTML = life - 1;
 }
 
+// sets the values of the elements holding all life totals to the value of startingLife
 function reset() {
     document.getElementById("toplife1").innerHTML = startingLife;
     document.getElementById("toplife2").innerHTML = startingLife;
@@ -15,6 +18,7 @@ function reset() {
     document.getElementById("bottomlife2").innerHTML = startingLife;
 }
 
+// updates the value of startingLife then hides and unhides specific elements to set the webpage for 2 or 4 player modes
 function changeSettings() {
     startingLife = document.getElementById("lifeSelect").value;
     if (document.getElementById("isCommander").value == "yes") {
@@ -58,8 +62,8 @@ function changeSettings() {
         document.getElementById("bottomRight").style.display = "none";
 
         // Set the color of the trackers to match the selectors
-        document.getElementById("playerbox").style.backgroundColor = document.getElementById("playerColorSelect").value;
-        document.getElementById("enemybox").style.backgroundColor = document.getElementById("enemyColorSelect").value;
+        document.getElementById("bottomdiv1").style.backgroundColor = document.getElementById("playerColorSelect").value;
+        document.getElementById("topdiv1").style.backgroundColor = document.getElementById("enemyColorSelect").value;
     }
 }
 

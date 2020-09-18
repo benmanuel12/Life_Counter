@@ -2,12 +2,18 @@ h1 {
     text-align: center;
 }
 
+
+/* rotates the top half of the page upside down */
+
 #topdiv {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
+
+
+/* makes sure the elements don't take up the full screen width so it looks good on mobile */
 
 #topdiv1,
 #topdiv2,
@@ -21,6 +27,9 @@ h1 {
     width: 50%;
 }
 
+
+/* centers the buttons under the trackers */
+
 .btn-group {
     display: block;
     position: relative;
@@ -29,17 +38,29 @@ h1 {
     margin: 15px;
 }
 
+
+/* allows the page to have the trackers side by side in commander mode */
+
+
+/* the JS sets display to block to turn this off */
+
 #topdiv,
 #bottomdiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+
+/* makes the font bigger */
+
 p {
     font-weight: bold;
     font-size: 50px;
 }
 
-#reset {
+
+/* adds spacing */
+
+#resetdiv {
     margin-top: 15px;
 }
